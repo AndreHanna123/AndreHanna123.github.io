@@ -1,0 +1,27 @@
+
+body{
+    background-color:navy;
+      color:lightgreen;
+}
+
+/* Rubriker */
+h1, p {
+    color: lightgreen;
+    background-color:#002171;
+    text-align: left;
+}
+
+td {
+    color:lightgreen;
+
+}
+
+#stycke2{
+    color: darkmagenta;
+}
+
+div{
+    background-color: palevioletred;
+    width: 300px;
+    height: 200px;
+}
