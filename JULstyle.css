@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css?family=Lily+Script+One');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lily Script One', cursive;
+}
+
+.box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    animation: bgAnimate 10s linear infinite;
+    background: rgb(204,0,0); 
+    background: -moz-linear-gradient(top, #D31132 0%, rgba(190,30,45,1) 93%, rgba(204,0,0,1) 100%); 
+    background: -webkit-linear-gradient(top, #D31132 0%,rgba(190,30,45,1) 93%,rgba(204,0,0,1) 100%);
+    background: linear-gradient(to bottom, #D31132 0%,rgba(190,30,45,1) 93%,rgba(204,0,0,1) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0000', endColorstr='#cc0000',GradientType=0 ); 
+}
+
+.tree{
+    position: absolute;
+    bottom: -170;
+    right: -21%;
+    width: 56%;
+    height: 100%;
+    background-size: auto 450px;
+}
+
+.box .tree.tree_1
+{
+    background-image: url("julgran.png");
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+
+.box .snow
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("snow.png");
+    z-index: 4;
+    animation: snow 10s linear infinite;
+}
+@keyframes snow
+{
+    0%
+    {
+        background-position: 0 0;
+    }
+    100%
+    {
+        background-position: 0 768px;
+    }
+}
+h1{
+    margin: 20px 0 0;
+    padding: 0;
+    text-align: center;
+    font-size: 5em;
+    animation: colorAnimate 15s linear infinite;
+    font-style: italic;
+}
+
+@keyframes colorAnimate
+{
+    0%
+    {
+        color: #ffff00; 
+    }
+    25%
+    {
+        color: #76ff03; 
+    }
+    50%
+    {
+        color: #7c4dff; 
+    }
+    75%
+    {
+        color: #ff4081; 
+    }
+    100%
+    {
+        color: #7c4dff; 
+    }
+
+}
+
+.snowmen {
+  width: 21vw;
+  position: absolute;
+  bottom: -5;
+  margin-left: 82.5%;
+}
+  .santa {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:  url(http://hatsuka.info/sample/20161202_svg/santa.svg) 0 100% no-repeat;
+    background-size:  auto 60px;
+    z-index: 1;
+    animation: animation_santa linear 10s infinite both;
+  }
+
+@keyframes animation_santa {  
+  0%   { background-position: -300px 100%; } 
+  100% { background-position: 2000px 100%; } 
+}
+
+
+#snowman {
+    width: 10vw;
+    bottom: 0;
+    margin-left: 58%;
+    transform: rotateZ(5deg);
+    -webkit-transform: rotateZ(5deg);
+    position: fixed;
+  }
+
+  
+.img-responsive {
+    max-width: 50%;
+    height: auto;
+    display: block;
+   }
+
+  
+.sleigh {
+    width: 70vmin;
+    position: absolute;
+    transform: translateX(50%);
+    top: 100px;
+    bottom: 20px;
+    -webkit-transform: rotateZ(-3deg);
+}
+
+@keyframes twinkle{
+    0%,100%{
+        opacity:1;
+    }
+    50%{
+        opacity:0;
+    }
+}
+
+@keyframes snowfall{
+    0%{
+        transform:translate(0px,0px);
+        opacity:1;
+   }
+
+    100%{
+        opacity:0;
+        transform: translate(80px, 150px) ;
+    }
+}
+@keyframes lightson{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+@keyframes dimlight{
+    0%, 100%{opacity:1;}
+    50%{opacity:0.95;}
+}
+@keyframes sleighpath{
+    0%{
+        opacity:0 ;
+        transform:translate(-3000px,1000px);
+    }
+
+    30%{
+        opacity:1 ;
+        transform:translate(0,0px);
+    }
+    31%{
+        opacity:1;
+        transform:translate(0px,0px) ;
+    }
+    35%{
+        opacity:1 ;
+        transform:translate(0,-5px);
+    }
+    40%{
+        opacity:1 ;
+        transform:translate(0,5px);
+    }
+    45%{
+        opacity:1 ;
+        transform:translate(0,0);
+    }
+    50%{
+        opacity:1 ;
+        transform:translate(0,5px);
+    }
+    55%{
+        opacity:1 ;
+        transform:translate(0,0);
+    }
+    60%{
+        opacity:1 ;
+        transform:translate(0,5px);
+    }
+    65%{
+        opacity:1 ;
+        transform:translate(0,0);
+    }
+    70%{
+        opacity:1 ;
+        transform:translate(0,5px);
+    }
+    75%{
+        opacity:1 ;
+        transform:translate(0,0);
+    }
+    80%{
+        opacity:1 ;
+        transform:translate(0,0);
+    }
+    100%{
+        opacity:0 ;
+        transform:translate(3000px,-1000px);
+    }
+}
+#moon{
+    animation: dimlight 4s ease infinite;
+}
+#Layer_15, #OBJECTS{
+        opacity:0;
+        animation: lightson 1s ease 7s forwards;
+}
+#star1{
+    animation: twinkle 2s ease infinite ;
+}
+
+#star2{
+    animation: twinkle 4s ease 1s infinite ;
+}
+
+#star3{
+    animation: twinkle 4s ease 0.5s infinite ;
+}
+
+#star4{
+    animation: twinkle 3s ease 2s infinite ;
+}
+#sleigh{
+    opacity:0;
+    animation: sleighpath 5s ease 3s forwards  ;
+}
+#snow1{
+    animation: snowfall 2s infinite;
+}
+#snow2{
+    animation: snowfall 1s  0.25s infinite;
+}
+#snow3{
+    animation: snowfall 1s  0.5s infinite;
+}
+#snow4{
+    animation: snowfall 1s  1s infinite;
+}
+#snow5{
+    animation: snowfall 2s 1.25s infinite ;
+}
+#snow6{
+    animation: snowfall 1.5s 1.5s infinite ;
+}
+#snow7{
+    animation: snowfall 0.5s  0.4s infinite;
+}
+#snow8{
+    animation: snowfall 0.5s 1s infinite ;
+}
+#snow9{
+    animation: snowfall 1.5s 0.5s infinite ;
+}
+#snow10{
+    animation: snowfall 1.5s 1s infinite ;
+}
+#snow11{
+    animation: snowfall 0.5s 0.25s infinite ;
+}
+.container-svg{
+width:100%;
+overflow:hidden;
+}
+
+@media screen and (max-width:700px){
+.container-svg{
+text-align:center ;
+height: 100vh ;
+}
+.container-svg > svg{
+height:100vh;
+}
+}
