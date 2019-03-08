@@ -72,7 +72,7 @@ body{
     float:left;
     overflow:hidden;
     visibility:hidden;
-    font-size: 10px;
+    font-size: 11.5px;
     font-family: 'Times New Roman', Times, serif;
    
     -webkit-transform: rotate(-60deg) skewY(30deg);
@@ -136,7 +136,7 @@ body{
     bottom:110%;
     font-style: italic;
     font-weight:normal;
-    font-size:1.5em;
+    font-size:1.4em;
     padding-top:100%;
     padding-bottom:100%;
     font-family: 'EB Garamond', serif;
@@ -147,7 +147,7 @@ body{
     position:absolute;
     bottom:-1px; left:45%;
     width:10%;
-    text-align:center;
+    text-align: center;
     z-index:1;
     border-bottom:2px solid #fff;
   }
@@ -164,7 +164,7 @@ body{
   
   #categories li div:hover p{
     top:50%;
-    padding-top:10%;
+    padding-top:1%;
   }
   #fork{
     position:fixed;
@@ -215,6 +215,7 @@ body{
         background-color: rgba(0, 128, 128, 0.8);
         height: 425px; 
         text-align: center;
+        overflow: hidden;
         
     }
 
@@ -222,12 +223,38 @@ body{
     border: 3px solid navy;
     }
     
-
-
-
     h1{
         font-family:'EB Garamond', serif;
         font-size: 30px;
     }
     
+   
+
+    #meny {
+      list-style-type: none;
+      margin: 0;
+      padding: 3;
+      overflow: hidden;
+      background-color: #212121;
+    }
+    
+    li {
+      float: right;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 17px 14px;
+      text-decoration: none;
+    }
+    
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+    
+    .active {
+      background-color: #4CAF50;
+    }
    
