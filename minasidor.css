@@ -108,6 +108,7 @@ a{
     list-style: none;
   }
 
+
   .nav-link{
     font-size: 1.5rem;
     color: mediumpurple;
@@ -148,7 +149,54 @@ a{
     animation: down 1s forwards;
   }
 
+  #portfoliomeny
+  {
+    position: fixed;
+    left: 71.599999999999999999555vw;
+    width: 20rem;
+    height: 0rem;
+    overflow: hidden;
+    background-color: midnightblue;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
 
+  #portfoliomeny li {
+    width: 100%;
+    height: 20%;
+    font-size: 1.75rem;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.25);
+  }
+
+  #portfoliomeny li:hover {
+    background-color: rgba(55, 55, 112, 0.8);
+    transform: scale(1.15);
+  }
+  #portfoliobtnicon 
+  {
+    font-size: 2rem;
+    position: fixed;
+    left: 80vw;
+    top: 1.9rem;
+  }
+
+  .menyaktiv {
+    height: 25rem !important;
+  }
+
+  #portfoliomeny * 
+  {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+  }
 @keyframes up{
   from{
     transform: translateY(-100%);
@@ -230,5 +278,22 @@ a{
   .overlay.open{
     opacity: 1;
     transform: scaleX(1);
+  }
+
+  #portfoliobtnicon 
+  {
+    left: 20rem;
+    top: 72.5vh;
+    color: rgba(0,0,0,0);
+    transition: 0.5s;
+  }
+
+  .iconactive {
+    color: rgba(0,0,0,1) !important;
+  }
+
+  #portfoliomeny
+  {
+    display: none;
   }
 }
