@@ -14,7 +14,6 @@ html{
 header{
   width: 100%;
   height: 100vh;
-  background-color: antiquewhite;
   position: relative;
 }
 
@@ -91,9 +90,10 @@ nav{
   background-color: #fff;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
   overflow: hidden;
+  position: fixed;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -107,7 +107,6 @@ a{
     display: flex;
     list-style: none;
   }
-
 
   .nav-link{
     font-size: 1.5rem;
@@ -149,14 +148,15 @@ a{
     animation: down 1s forwards;
   }
 
-  #portfoliomeny
+  #portfoliomeny, .mobil
   {
     position: fixed;
-    left: 71.599999999999999999555vw;
+    top: 6rem;
+    left: 72%;
     width: 20rem;
     height: 0rem;
     overflow: hidden;
-    background-color: midnightblue;
+    background-color: mediumpurple;
     transition: 0.4s;
     display: flex;
     align-items: center;
@@ -164,9 +164,15 @@ a{
     flex-direction: column;
   }
 
-  #portfoliomeny li {
+  @media screen and (min-width: 770px) {
+    .mobil {
+      display: none;
+    }
+  }
+
+  #portfoliomeny li, .mobil li {
     width: 100%;
-    height: 20%;
+    height: 100%;
     font-size: 1.75rem;
     transition: 0.4s;
     display: flex;
@@ -175,16 +181,16 @@ a{
     box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.25);
   }
 
-  #portfoliomeny li:hover {
+  #portfoliomeny li:hover, .mobil li:hover {
     background-color: rgba(55, 55, 112, 0.8);
     transform: scale(1.15);
   }
   #portfoliobtnicon 
   {
     font-size: 2rem;
-    position: fixed;
-    left: 80vw;
-    top: 1.9rem;
+    position: absolute;
+    left: 85%;
+    top: 30%;
   }
 
   .menyaktiv {
@@ -196,7 +202,40 @@ a{
     color: white;
     text-decoration: none;
     list-style: none;
+    font-size: 1.5rem;
   }
+
+  #containerOne, #containerTwo {
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("https://images.unsplash.com/photo-1450380412196-4e27fb7d2270?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1375https://images.unsplash.com/photo-1450380412196-4e27fb7d2270?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1375");
+    background-attachment: fixed;
+  }
+
+  #containerTwo {
+    background-image: url("https://images.unsplash.com/photo-1449709992276-24bbca940809?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=c5de67a556b843958d279d2b74a09550");
+    text-align: center;
+    font-family: serif;
+    font-size: 45px;
+    line-height: 200px;
+    letter-spacing: 15px;
+    color: #fff;
+    top: -1px;
+    position: relative;
+    
+  }
+  .nti{
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+  }
+  .h1{
+    font-size: 22px;
+    text-align: center;
+  }
+
 @keyframes up{
   from{
     transform: translateY(-100%);
@@ -206,7 +245,6 @@ a{
     transform: translateY(0);
     opacity: 1;
   }
-
 }
 
 @keyframes down{
@@ -231,6 +269,17 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .mobil {
+    left: 3rem;
+    top: 75%;
+    height: 0rem;
+    width: 24rem;
+  }
+
+  .menyaktiv_m {
+    height: 20vh;
   }
 
   header{
@@ -282,8 +331,8 @@ a{
 
   #portfoliobtnicon 
   {
-    left: 20rem;
-    top: 72.5vh;
+    left: 70%;
+    top: 72%;
     color: rgba(0,0,0,0);
     transition: 0.5s;
   }

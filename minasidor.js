@@ -14,14 +14,13 @@ selector("#menu").addEventListener("click", () => {
 
 selector("#portfoliobtn").addEventListener("click", () => {
     selector("#portfoliomeny").classList.toggle("menyaktiv");
+    selector(".mobil").classList.toggle("menyaktiv_m");
 
     portfolioaktiv 
     ? (() => {
         selector("#portfoliobtnicon").classList.remove("fa-caret-up");
         selector("#portfoliobtnicon").classList.add("fa-sort-down");    
         portfolioaktiv = false;
-
-
     })()
 
     :
@@ -35,4 +34,5 @@ selector("#portfoliobtn").addEventListener("click", () => {
 
 selector("#menu").addEventListener("click", () => {
     selector("#portfoliobtnicon").classList.toggle("iconactive");
+    selector("#portfoliomeny_m").classList.remove("menyaktiv_m");
 });

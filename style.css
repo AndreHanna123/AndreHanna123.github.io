@@ -40,7 +40,7 @@ h1, p {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 );
     
     text-align: center;
-    text-shadow: 2px 2px 5px #78002e, 0 0 10px orangered;
+    text-shadow: 2px 2px 5px #78002e, 0 0 10px gold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -64,4 +64,11 @@ img {
 a {
     position: relative;
     margin-left: 30%;
+}
+
+table, th, td {
+    border: 1px solid rgb(224, 201, 137);
+    
+}
+th, td {  padding: 10px;
 }

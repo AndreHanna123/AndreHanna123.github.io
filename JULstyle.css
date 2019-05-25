@@ -20,7 +20,7 @@ body{
 
 .tree{
     position: absolute;
-    bottom: -170;
+    bottom: -170px;
     right: -21%;
     width: 56%;
     height: 100%;
@@ -91,7 +91,7 @@ h1{
 .snowmen {
   width: 21vw;
   position: absolute;
-  bottom: -5;
+  bottom: -5px;
   margin-left: 82.5%;
 }
   .santa {

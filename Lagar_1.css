@@ -56,5 +56,12 @@ div {
     
 }
 
+table, th, td {
+    border: 1px solid rgb(224, 201, 137);
+    
+}
+th, td {  padding: 10px;
+}
+
 
 
