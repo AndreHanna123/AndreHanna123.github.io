@@ -230,10 +230,13 @@ a {
     font-size: 22px;
     text-align: center;
     font-family: 'Playfair Display', serif;
+    background: black;
+    color: white;
   }
   .h1{
     font-size: 22px;
     text-align: center;
+    font-family: 'Playfair Display SC', serif;
   }
 
 @keyframes up{
