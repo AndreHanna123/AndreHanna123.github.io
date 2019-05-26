@@ -1,0 +1,67 @@
+body{
+    color: #e35183;
+    display: grid;
+    background: #959595; 
+    background: -moz-linear-gradient(top, #959595 0%, #0d0d0d 46%, #010101 50%, #0a0a0a 53%, #4e4e4e 76%, #383838 87%, #1b1b1b 100%); 
+    background: -webkit-linear-gradient(top, #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%); 
+    background: linear-gradient(to bottom, #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#1b1b1b',GradientType=0 );
+    }
+
+table, th, td {
+    border: 1px solid #ad1457;
+    text-align: center;
+    margin: auto;
+    
+    
+}
+td {  padding: 15px;
+    border-style: dotted;
+    border-width: 2px;
+    border-color: #78002e;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+th {
+    padding: 10px;
+    border-style: dotted;
+    border-width: 2px;
+    border-color: #78002e;
+    font-style: italic;
+    
+}
+
+
+h1, p {
+    color: black;
+    background: rgb(246,248,249); 
+    background: -moz-linear-gradient(top, rgba(246,248,249,1) 0%, rgba(229,235,238,1) 50%, rgba(215,222,227,1) 51%, rgba(245,247,249,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(245,247,249,1) 100%); 
+    background: linear-gradient(to bottom, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(245,247,249,1) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 );
+    text-align: center;
+    text-shadow: 2px 2px 5px #78002e, 0 0 10px red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+div {
+    background-color: black;
+    width: 125px;
+    padding: 5px;
+    border: 5px solid red;
+    font-style: italic;
+    margin-left: 88.5%;
+    text-align: center;
+    
+}
+
+table, th, td {
+    border: 1px solid rgb(224, 201, 137);
+    
+}
+th, td {  padding: 10px;
+}
+
+
+
