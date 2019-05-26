@@ -218,9 +218,9 @@ a {
     background-image: url("https://images.unsplash.com/photo-1449709992276-24bbca940809?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=c5de67a556b843958d279d2b74a09550");
     text-align: center;
     font-family: serif;
-    font-size: 45px;
+    font-size: 30px;
     line-height: 200px;
-    letter-spacing: 15px;
+    letter-spacing: 5px;
     color: #fff;
     top: -1px;
     position: relative;
